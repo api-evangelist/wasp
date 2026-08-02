@@ -1,0 +1,21 @@
+generated: '2026-07-21'
+method: searched
+host: https://wasp.sh
+notes: >-
+  Probed the standard /.well-known/ discovery surface on the Wasp docs/marketing
+  host. No documents are published (all 404). Recorded for auditability; absence
+  is valid data. Wasp is a self-hosted framework, not a hosted API, so it exposes
+  no OIDC/OAuth discovery or API catalog.
+documents:
+- path: /.well-known/security.txt
+  status: 404
+- path: /security.txt
+  status: 404
+- path: /.well-known/openid-configuration
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404

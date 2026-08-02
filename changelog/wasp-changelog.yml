@@ -1,0 +1,34 @@
+generated: '2026-07-21'
+method: searched
+source: https://github.com/wasp-lang/wasp/releases
+scheme: semver
+current_version: 0.24.0
+notes: >-
+  Wasp publishes dated releases on GitHub with a detailed CHANGELOG. Minor
+  versions may include breaking changes with accompanying migration guides at
+  https://wasp.sh/docs/migration-guides. Recent stable releases below.
+entries:
+- version: 0.24.0
+  date: '2026-06-11'
+  breaking: true
+  highlights:
+  - The Wasp TS config (main.wasp.ts) is now called the Wasp Spec, importing from @wasp.sh/spec.
+  - Projects now require vitest listed in devDependencies.
+  - Removed `wasp new:ai` and the ai-generated starter template.
+  - The `api` export from wasp/client/api is now a Ky instance (previously axios).
+- version: 0.23.0
+  date: '2026-04-15'
+  breaking: true
+  highlights:
+  - Wasp now requires Node.js >= v24.14.1 (previously >= v22.22.2).
+  - Upgraded pinned TypeScript from 5.8.2 to 5.9.3.
+  - Built web app HTML file changed from index.html to 200.html.
+  - Routes can now be prerendered at build time with prerender true.
+- version: 0.22.0
+  date: '2026-04-01'
+  breaking: true
+  highlights:
+  - Wasp now requires Node.js >= v22.22.2.
+  - Generated Docker image upgraded from Alpine 3.20 to a newer base.
+  - Upgraded Zod for env validation to Zod v4.
+  - HTML head tags in app.head must now be valid React JSX.

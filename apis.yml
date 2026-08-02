@@ -1,9 +1,29 @@
 aid: wasp
 name: Wasp
-description: 'Wasp is a company surfaced as a portfolio company of hv-capital and added to the API Evangelist
-  network as a stub for enrichment. Sector: ai-enterprise-software. This profile is a lead awaiting the
-  enrichment pipeline.'
+description: >-
+  Wasp is an open-source, batteries-included full-stack web framework for the AI
+  era. It uses a declarative configuration (the Wasp Spec, main.wasp.ts) layered
+  on top of React, Node.js, and Prisma to generate a complete application,
+  handling authentication, database and data models, background jobs, RPC, email
+  sending, end-to-end type safety, and single-command deployment out of the box.
+  Wasp also lets developers define custom HTTP API endpoints (powered by Express)
+  and auto-generates CRUD operations. Created by Y Combinator- and HV
+  Capital-backed twin founders Matija and Martin Sosic, Wasp aims to let teams
+  ship production-ready apps in a day while remaining friendly to both human and
+  AI-assisted coding workflows.
 url: https://raw.githubusercontent.com/api-evangelist/wasp/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://github.com/wasp-lang.png
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
@@ -12,13 +32,86 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Ai Enterprise Software
+- Web Framework
+- Full Stack
+- Developer Tools
+- React
+- Node.js
+- TypeScript
+- Open Source
+- AI Coding
 apis: []
+common:
+- type: DomainSecurity
+  url: security/wasp-domain-security.yml
+- type: Portal
+  url: https://wasp.sh
+  name: Wasp
+- type: Documentation
+  url: https://wasp.sh/docs
+  name: Wasp Documentation
+- type: GettingStarted
+  url: https://wasp.sh/docs/quick-start
+  name: Quick Start
+- type: Blog
+  url: https://wasp.sh/blog
+  name: Wasp Blog
+- type: GitHubOrganization
+  url: https://github.com/wasp-lang
+  name: wasp-lang on GitHub
+- type: Support
+  url: https://discord.gg/rzdnErX
+  name: Wasp Discord Community
+- type: Roadmap
+  url: https://github.com/orgs/wasp-lang/projects/5
+  name: Wasp Roadmap
+- type: LLMsTxt
+  url: llms/wasp-llms.txt
+  name: llms.txt
+- type: Packages
+  url: packages/wasp-packages.yml
+  name: Packages
+- type: SDKs
+  url: packages/wasp-packages.yml
+  name: SDKs
+- type: CLI
+  url: cli/wasp-cli.yml
+  name: Wasp CLI
+- type: ChangeLog
+  url: changelog/wasp-changelog.yml
+  name: Changelog
+- type: APIReference
+  url: https://wasp.sh/docs/api
+  name: Wasp Spec API Reference (@wasp.sh/spec)
+- type: PrivacyPolicy
+  url: https://wasp.sh/privacy-policy
+  name: Privacy Policy
+- type: Lifecycle
+  url: lifecycle/wasp-lifecycle.yml
+  name: Versioning and Lifecycle
+- type: VulnerabilityDisclosure
+  url: security/wasp-vulnerability-disclosure.yml
+  name: Vulnerability Disclosure
+- type: Security
+  url: https://github.com/wasp-lang/wasp/blob/main/SECURITY.md
+  name: Security Policy (SECURITY.md)
+- type: Components
+  url: components/wasp-components.yml
+  name: Auth UI Components
+- type: AgentSkill
+  url: skills/_index.yml
+  name: Wasp Agent Plugin Skills (official)
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 10
+  pass: local-v1

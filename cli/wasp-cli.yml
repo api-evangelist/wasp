@@ -1,0 +1,54 @@
+generated: '2026-07-21'
+method: searched
+source: https://wasp.sh/docs/general/cli
+name: wasp
+summary: >-
+  The Wasp CLI is the primary interface for creating, developing, building, and
+  deploying Wasp full-stack applications.
+install:
+- method: script
+  command: curl -sSL https://get.wasp.sh/installer.sh | sh
+- method: npm
+  command: npm install -g @wasp.sh/wasp-cli
+commands:
+- group: project
+  commands:
+  - name: new
+    description: Create a new Wasp project (interactively pick a starter template).
+  - name: start
+    description: Run the app in development mode (client, server, and database).
+  - name: start db
+    description: Start a managed development PostgreSQL database in Docker.
+  - name: clean
+    description: Delete node_modules and generated project artifacts.
+  - name: version
+    description: Print the installed Wasp CLI version.
+- group: database
+  commands:
+  - name: db migrate-dev
+    description: Create and apply a Prisma migration in development.
+  - name: db studio
+    description: Open Prisma Studio to inspect the database.
+  - name: db seed
+    description: Run database seed functions.
+  - name: db reset
+    description: Drop and recreate the database.
+- group: build-deploy
+  commands:
+  - name: build
+    description: Build the app for production (generates a deployable bundle / Docker image).
+  - name: deploy
+    description: Deploy the app (e.g. to Fly.io) via the built-in deploy command.
+- group: tooling
+  commands:
+  - name: test
+    description: Run the app's test suite (requires vitest as of v0.24).
+  - name: telemetry
+    description: View or change anonymous usage telemetry settings.
+  - name: completion
+    description: Generate shell completion scripts.
+key_flows:
+- Scaffold a new full-stack app with `wasp new`.
+- Iterate locally with `wasp start` and a Dockerized DB via `wasp start db`.
+- Evolve the schema with `wasp db migrate-dev` and inspect via `wasp db studio`.
+- Ship with `wasp build` then `wasp deploy`.

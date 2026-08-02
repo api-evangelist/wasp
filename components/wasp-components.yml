@@ -1,0 +1,25 @@
+generated: '2026-07-21'
+method: searched
+source: https://wasp.sh/docs/auth/ui
+notes: >-
+  Wasp ships prebuilt, self-updating client-side Auth UI components generated
+  alongside the server-side auth code. They are imported from the
+  `wasp/client/auth` module inside a Wasp project (not a hosted embed), and
+  automatically render the correct providers (Username & Password, Email,
+  Google, GitHub, Keycloak, Slack, Discord) based on the auth methods enabled
+  in main.wasp.ts. Distinct from the npm packages in packages/.
+families:
+- family: Auth UI
+  loader: wasp/client/auth
+  docs: https://wasp.sh/docs/auth/ui
+  components:
+  - name: LoginForm
+    description: Login form; works with Username & Password, Email, GitHub, Google, Keycloak, Slack, and Discord auth.
+  - name: SignupForm
+    description: Signup form; auto-shows the enabled authentication providers, customizable with additional fields.
+  - name: ForgotPasswordForm
+    description: Forgot-password form (Email auth) that starts the password reset flow.
+  - name: ResetPasswordForm
+    description: Reset-password form (Email auth) completing the reset flow.
+  - name: VerifyEmailForm
+    description: Email verification form (Email auth).

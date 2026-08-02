@@ -1,0 +1,30 @@
+generated: '2026-07-21'
+method: searched
+source: https://github.com/wasp-lang/wasp/releases
+versioning:
+  scheme: semver
+  current: 0.24.0
+  stage: pre-1.0
+  docs: https://wasp.sh/docs/migration-guide
+  notes: >-
+    Wasp is pre-1.0; minor versions (0.23 -> 0.24) may include breaking
+    changes. Each release ships a dated GitHub release with a CHANGELOG and a
+    versioned migration guide (per-version docs are kept online at
+    wasp.sh/docs/<version>, back to 0.11.8).
+deprecation:
+  policy_url: null
+  sunset_header: false
+  notes: >-
+    No formal deprecation policy or RFC 8594 Sunset-header contract is
+    published. Breaking changes and removals are communicated through release
+    notes and per-version migration guides (e.g. `wasp new:ai` removed in
+    0.24.0), and the `wasp-migrate` npm tool assists upgrades. Security support
+    covers only the latest major release (SECURITY.md).
+sla: null
+status_page: null
+support_policy:
+  security_updates: latest major release only
+  source: https://github.com/wasp-lang/wasp/blob/main/SECURITY.md
+cross_links:
+- changelog/wasp-changelog.yml
+- security/wasp-vulnerability-disclosure.yml

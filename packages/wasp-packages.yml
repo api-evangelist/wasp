@@ -1,0 +1,36 @@
+generated: '2026-07-21'
+method: searched
+source: https://www.npmjs.com/org/wasp.sh
+notes: >-
+  Wasp is primarily distributed as a native CLI installed via
+  `curl -sSL https://get.wasp.sh/installer.sh | sh`. First-party packages are
+  published to npm under the @wasp.sh scope from the wasp-lang/wasp monorepo.
+packages:
+- language: javascript
+  registry: npm
+  name: "@wasp.sh/wasp-cli"
+  url: https://www.npmjs.com/package/@wasp.sh/wasp-cli
+  install: npm install -g @wasp.sh/wasp-cli
+  official: true
+  description: The Wasp CLI, distributed as an npm package.
+- language: typescript
+  registry: npm
+  name: "@wasp.sh/spec"
+  url: https://www.npmjs.com/package/@wasp.sh/spec
+  install: npm install @wasp.sh/spec
+  official: true
+  description: Wasp TS SDK / config spec (the Wasp Spec, imported by main.wasp.ts).
+- language: javascript
+  registry: npm
+  name: "@wasp.sh/wasp-app-runner"
+  url: https://www.npmjs.com/package/@wasp.sh/wasp-app-runner
+  install: npm install @wasp.sh/wasp-app-runner
+  official: true
+  description: CLI tool for running Wasp applications for end-to-end testing.
+- language: javascript
+  registry: npm
+  name: wasp-migrate
+  url: https://www.npmjs.com/package/wasp-migrate
+  install: npx wasp-migrate
+  official: true
+  description: Official tool for migrating Wasp projects between versions.

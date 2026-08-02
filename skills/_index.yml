@@ -1,0 +1,42 @@
+generated: '2026-07-21'
+method: searched
+source: https://github.com/wasp-lang/wasp-agent-plugins
+commit: 3a2fd08e789818d4e3ca28b38fc80facb890dadf
+docs: https://wasp.sh/docs/wasp-ai/coding-agent-plugin
+notes: >-
+  Wasp publishes an OFFICIAL agent plugin/skills package (wasp-lang/wasp-agent-plugins,
+  plugin version 1.3.0) that works with Claude Code, Cursor, Codex, Gemini CLI, GitHub
+  Copilot, OpenCode, and others. Install via `claude plugin marketplace add
+  wasp-lang/wasp-agent-plugins` + `claude plugin install wasp@wasp-agent-plugins`, or
+  `npx skills add wasp-lang/wasp-agent-plugins`. The SKILL.md files below are saved
+  VERBATIM from the upstream repo; each skill's supporting reference files
+  (authentication.md, database.md, styling.md, general-wasp-knowledge.md, etc.) live in
+  the upstream repo alongside each SKILL.md. Wasp is a self-hosted framework (no hosted
+  API/OpenAPI), so these skills operate the Wasp CLI and project codebase rather than
+  HTTP operations. The plugin also bundles the third-party chrome-devtools MCP server
+  for browser visibility (not a Wasp-hosted MCP server).
+skills:
+- file: wasp-add-feature.md
+  name: add-feature
+  description: Add Wasp's built-in full-stack features (auth, email sending, database, styling with Tailwind/shadcn, meta tags) to an app.
+  upstream: plugins/wasp/skills/add-feature/SKILL.md
+- file: wasp-deploying-app.md
+  name: deploying-app
+  description: Deploy the Wasp app to Railway or Fly.io using the Wasp CLI, with a pre-deployment validation pass.
+  upstream: plugins/wasp/skills/deploying-app/SKILL.md
+- file: wasp-expert-advice.md
+  name: expert-advice
+  description: Get Wasp-expert advice on app improvements and functionality, grounded in the current codebase and version-matched docs.
+  upstream: plugins/wasp/skills/expert-advice/SKILL.md
+- file: wasp-start-dev-server.md
+  name: start-dev-server
+  description: Start the Wasp dev server with full debugging visibility (server logs plus browser console access).
+  upstream: plugins/wasp/skills/start-dev-server/SKILL.md
+- file: wasp-plugin-help.md
+  name: wasp-plugin-help
+  description: Show the Wasp plugin's available features, commands, and skills.
+  upstream: plugins/wasp/skills/wasp-plugin-help/SKILL.md
+- file: wasp-plugin-init.md
+  name: wasp-plugin-init
+  description: Import Wasp knowledge, LLM-friendly docs fetching, and best practices into the project's CLAUDE.md or AGENTS.md.
+  upstream: plugins/wasp/skills/wasp-plugin-init/SKILL.md

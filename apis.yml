@@ -68,6 +68,8 @@ tags_raw:
 - AI Coding
 apis: []
 common:
+- type: Website
+  url: https://wasp.sh/
 - type: DomainSecurity
   url: security/wasp-domain-security.yml
 - type: Portal

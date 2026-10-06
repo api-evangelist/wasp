@@ -43,7 +43,7 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.23'
 created: '2026-07-17'
-modified: '2026-07-21'
+modified: '2026-10-06'
 tags:
 - Company
 - Ai Enterprise Software
@@ -69,6 +69,8 @@ tags_raw:
 - Open-Source
 apis: []
 common:
+- url: https://wasp.sh/blog/rss.xml
+  type: BlogRSS
 - type: Website
   url: https://wasp.sh/
 - type: DomainSecurity
